@@ -1,0 +1,69 @@
+.social-icons a:nth-child(1) {
+    color: #0077B5;
+}
+
+/* LinkedIn blue */
+.social-icons a:nth-child(2) {
+    color: #fcfbfb;
+}
+
+/* GitHub black */
+.social-icons {
+    background-color: transparent;
+    backdrop-filter: blur(9px);
+    border: 2px solid white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url('./lap.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 500px;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+
+}
+
+social-icons a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 50px 20px;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .contact h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

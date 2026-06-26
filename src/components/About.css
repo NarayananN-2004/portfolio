@@ -1,0 +1,129 @@
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.about,
+.skills,
+.Internships,
+.experience {
+  background: rgba(128, 128, 128, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  color: inherit;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background 0.4s ease;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+.about:hover,
+.skills:hover,
+.Internships:hover,
+.experience:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.about {
+  border-left: 5px solid #ff6b6b;
+}
+
+.skills {
+  border-left: 5px solid #feca57;
+}
+
+.Internships {
+  border-left: 5px solid #1dd1a1;
+}
+
+.experience {
+  border-left: 5px solid #54a0ff;
+}
+
+.about h1,
+.skills h1,
+.Internships h1,
+.experience h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #999, currentColor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about h2,
+.Internships h2,
+.experience h2 {
+  font-size: 1.15em;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills button {
+  padding: 12px 24px;
+  font-size: 0.95em;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #61dafb 0%, #21a1f1 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(33, 161, 241, 0.3);
+}
+
+.skills button:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(33, 161, 241, 0.5);
+  background: linear-gradient(135deg, #38c8ff 0%, #158fdd 100%);
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .about,
+  .skills,
+  .Internships,
+  .experience {
+    padding: 25px;
+    border-radius: 16px;
+  }
+
+  .about h1,
+  .skills h1,
+  .Internships h1,
+  .experience h1 {
+    font-size: 2em;
+  }
+
+  .about h2,
+  .Internships h2,
+  .experience h2 {
+    font-size: 1.05em;
+  }
+}
