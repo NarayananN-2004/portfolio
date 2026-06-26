@@ -1,8 +1,6 @@
 import React from 'react';
 import './navibar.css';
-import resume from '../Resume.pdf';
 import { Link } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 const Navibar = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
